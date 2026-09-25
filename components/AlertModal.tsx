@@ -128,7 +128,7 @@ export default function AlertModal({
 
         <form onSubmit={handleSubmit} className="space-y-4">
           {alertData?.symbol ? (
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-[var(--briefing-slate)]">
               {alertData.company || alertData.symbol} ({alertData.symbol})
             </p>
           ) : null}
@@ -161,12 +161,12 @@ export default function AlertModal({
               <SelectTrigger className="select-trigger w-full">
                 <SelectValue placeholder="Select type" />
               </SelectTrigger>
-              <SelectContent className="bg-gray-800 border-gray-600 text-white">
+              <SelectContent className="packet-select-content">
                 {ALERT_TYPE_OPTIONS.map((option) => (
                   <SelectItem
                     key={option.value}
                     value={option.value}
-                    className="focus:bg-gray-600 focus:text-white"
+                    className="packet-select-item"
                   >
                     {option.label}
                   </SelectItem>
@@ -206,14 +206,14 @@ export default function AlertModal({
               variant="ghost"
               disabled={pending}
               onClick={() => setOpen(false)}
-              className="text-gray-400"
+              className="text-[var(--briefing-slate)] hover:text-[var(--briefing-ink)]"
             >
               Cancel
             </Button>
             <Button
               type="submit"
               disabled={pending}
-              className="bg-yellow-500 text-black hover:bg-yellow-400"
+              className="yellow-btn"
             >
               {pending ? 'Saving…' : isEdit ? 'Save changes' : 'Create alert'}
             </Button>

@@ -14,7 +14,7 @@ export default function WatchlistEmpty({
           fill="none"
           stroke="currentColor"
           strokeWidth="1.5"
-          className="watchlist-star text-gray-500"
+          className="watchlist-star"
         >
           <path
             strokeLinecap="round"

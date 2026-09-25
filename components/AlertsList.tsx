@@ -48,11 +48,14 @@ export default function AlertsList({ alertData }: AlertsListProps) {
 
   return (
     <div className="watchlist-alerts flex">
-      <h2 className="watchlist-title">Alerts</h2>
+      <h2 className="packet-section-title">Alerts</h2>
 
       {alerts.length === 0 ? (
         <div className="alert-list">
-          <p className="alert-empty">No alerts yet. Add one from a watchlist row or stock page.</p>
+          <p className="alert-empty">
+            No alerts yet. On a watchlist row or stock page, choose{' '}
+            <strong>Add Alert</strong> to set an upper or lower price threshold.
+          </p>
         </div>
       ) : (
         <ul className="alert-list">
@@ -68,7 +71,7 @@ export default function AlertsList({ alertData }: AlertsListProps) {
                 </span>
               </div>
               <div className="alert-actions">
-                <span className="text-sm text-gray-300">{getAlertText(alert)}</span>
+                <span className="text-sm text-[var(--briefing-slate)]">{getAlertText(alert)}</span>
                 <div className="flex items-center gap-1">
                   <Button
                     type="button"
@@ -84,7 +87,7 @@ export default function AlertsList({ alertData }: AlertsListProps) {
                     type="button"
                     size="icon"
                     variant="ghost"
-                    className="alert-delete-btn text-red-400 hover:text-red-300"
+                    className="alert-delete-btn"
                     aria-label={`Delete ${alert.alertName}`}
                     disabled={pending && deletingId === alert.id}
                     onClick={() => handleDelete(alert)}

@@ -72,10 +72,10 @@ const CountrySelect = ({
                 </Button>
             </PopoverTrigger>
             <PopoverContent
-                className='w-full p-0 bg-gray-800 border-gray-600'
+                className='w-full p-0 packet-menu border-[color-mix(in_srgb,#1b2430_14%,transparent)]'
                 align='start'
             >
-                <Command className='bg-gray-800 border-gray-600'>
+                <Command className='bg-[#f7f8f8] border-0'>
                     <CommandInput
                         placeholder='Search countries...'
                         className='country-select-input'
@@ -83,8 +83,8 @@ const CountrySelect = ({
                     <CommandEmpty className='country-select-empty'>
                         No country found.
                     </CommandEmpty>
-                    <CommandList className='max-h-60 bg-gray-800 scrollbar-hide-default'>
-                        <CommandGroup className='bg-gray-800'>
+                    <CommandList className='max-h-60 bg-[#f7f8f8] scrollbar-hide-default'>
+                        <CommandGroup className='bg-[#f7f8f8]'>
                             {countries.map((country) => (
                                 <CommandItem
                                     key={country.value}
@@ -97,7 +97,7 @@ const CountrySelect = ({
                                 >
                                     <Check
                                         className={cn(
-                                            'mr-2 h-4 w-4 text-yellow-500',
+                                            'mr-2 h-4 w-4 text-[#2f6f8f]',
                                             value === country.value ? 'opacity-100' : 'opacity-0'
                                         )}
                                     />
@@ -138,7 +138,7 @@ export const CountrySelectField = ({
                 )}
             />
             {error && <p className='text-sm text-red-500'>{error.message}</p>}
-            <p className='text-xs text-gray-500'>
+            <p className='text-xs text-[var(--briefing-slate)]'>
                 Helps us show market data and news relevant to you.
             </p>
         </div>

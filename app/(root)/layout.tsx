@@ -26,10 +26,10 @@ const Layout = async ({ children }: { children : React.ReactNode }) => {
     }
 
     return (
-        <main className="min-h-screen text-gray-400">
+        <main className="briefing-shell min-h-screen">
             <Header user={user} />
 
-            <div className="container py-10">
+            <div className="container briefing-main">
                 {children}
             </div>
         </main>

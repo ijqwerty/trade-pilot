@@ -78,8 +78,8 @@ const WatchlistButton = ({
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          fill={added ? "#FACC15" : "none"}
-          stroke="#FACC15"
+          fill={added ? "#2F6F8F" : "none"}
+          stroke="#2F6F8F"
           strokeWidth="1.5"
           className="watchlist-star"
         >
@@ -97,7 +97,11 @@ const WatchlistButton = ({
     <button
       type="button"
       disabled={pending}
-      className={`watchlist-btn ${added ? "watchlist-remove" : ""}`}
+      aria-label={label}
+      title={label}
+      className={`watchlist-btn ${added ? "watchlist-remove" : ""} ${
+        showTrashIcon && added ? "watchlist-remove--compact" : ""
+      }`}
       onClick={handleClick}
     >
       {showTrashIcon && added ? (
@@ -107,12 +111,15 @@ const WatchlistButton = ({
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-5 h-5 mr-2"
+          className="watchlist-remove-icon"
+          aria-hidden="true"
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M6 7h12M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2m-7 4v6m4-6v6m4-6v6" />
         </svg>
       ) : null}
-      <span>{label}</span>
+      <span className={showTrashIcon && added ? "watchlist-remove-label" : undefined}>
+        {label}
+      </span>
     </button>
   );
 };
