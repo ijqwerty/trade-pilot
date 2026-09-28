@@ -1,0 +1,38 @@
+{
+  "title": "Approve Packet Cover Split (type/strata cover)",
+  "question": "Revised: no auth-cover-field or hero imagery. Cover is typography, rules, Signal Ticks, and strata only. Pick Desktop A or B as the north star; confirm mobile.",
+  "options": [
+    {
+      "id": "desktop-a",
+      "label": "Desktop A — Canonical type cover",
+      "kicker": "DESKTOP",
+      "thesis": "~40/60 Cover Split: date masthead → title → lede → session/focus strata → TOC. Substantial through type and rules — no plate.",
+      "viewport": "Form left with Signal Ticks + TradePilot and teal Sign in. Cover right builds the packet face from Castoro date, briefing title, SESSION/FOCUS meta, and hairline TOC.",
+      "risk": "Without a plate, empty cover risk — A counters with session meta + TOC strata density.",
+      "comp": ".impeccable/mocks/auth-cover-split-desktop-a.png"
+    },
+    {
+      "id": "desktop-b",
+      "label": "Desktop B — TOC-forward strata",
+      "kicker": "DESKTOP VARIANT",
+      "thesis": "Same 40/60 split; quieter masthead/title; deep TOC block is the cover’s dominant move, with a compact text register footer.",
+      "viewport": "Form rail unchanged. Cover leads with contents-scale Watchlist / Alerts / Market context rows and a tabular open/close register — still no imagery.",
+      "risk": "TOC scale can make the cover feel like a feature list if strata rhythm is weak.",
+      "comp": ".impeccable/mocks/auth-cover-split-desktop-b.png"
+    },
+    {
+      "id": "mobile",
+      "label": "Mobile — Compact masthead + form",
+      "kicker": "MOBILE",
+      "thesis": "Date + Signal Ticks + title under a rule, then form. No plate, no TOC, no stacked desktop cover.",
+      "viewport": "Compact masthead then logo + Welcome back + credentials + teal Sign in.",
+      "risk": "Must stay form-first on phone.",
+      "comp": ".impeccable/mocks/auth-cover-split-mobile.png"
+    }
+  ],
+  "steer": true,
+  "buildPath": {
+    "value": "comp",
+    "toggle": false
+  }
+}

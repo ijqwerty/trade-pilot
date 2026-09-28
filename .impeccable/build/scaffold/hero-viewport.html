@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>TradePilot hero viewport</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Castoro+Titling:wght@400&family=Source+Sans+3:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="layout.css" />
+  <style>
+    html, body { margin: 0; background: #f7f8f8; color: #121212; font-family: "Source Sans 3", sans-serif; }
+    .comp-frame { width: 1280px; height: 720px; background: #f7f8f8; overflow: hidden; }
+    .region { box-sizing: border-box; overflow: hidden; }
+    .r-header { border-bottom: 1px solid #d8 rec; border-bottom-color: #d8dcde; display: flex; align-items: center; padding: 0 24px; }
+    .brand { display: flex; align-items: center; gap: 8px; font-family: "Castoro Titling", serif; font-size: 22px; }
+    .brand-mark { width: 18px; height: 18px; background: #2f6f8f; clip-path: polygon(50% 0, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0 50%, 35% 35%); }
+    .nav { display: flex; gap: 28px; font-size: 14px; font-weight: 600; color: #5a6573; }
+    .nav .on { color: #121212; border-bottom: 2px solid #2f6f8f; padding-bottom: 2px; }
+    .header-right { margin-left: auto; display: flex; align-items: center; gap: 16px; font-size: 13px; color: #5a6573; }
+    .mast { padding: 8px 18px 0; }
+    .mast small { display: block; font-size: 11px; letter-spacing: 0.22em; font-weight: 700; }
+    .mast h1 { margin: 4px 0 0; font-family: "Castoro Titling", serif; font-size: 28px; font-weight: 400; letter-spacing: 0.02em; text-transform: uppercase; }
+    .meta { font-size: 12px; line-height: 1.45; color: #5a6573; padding-top: 10px; }
+    .meta strong { color: #121212; font-weight: 600; }
+    .attn-h, .wl-h, .ctx-h { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 10px 16px 0; color: #1b4e4d; }
+    .attn-list { padding: 8px 16px; font-size: 12px; }
+    .item { padding: 10px 0; border-bottom: 1px solid #e2e5e7; }
+    .stamp { display: inline-block; border: 1.5px solid #b9541b; color: #b9541b; font-size: 9px; font-weight: 700; letter-spacing: 0.08em; padding: 2px 6px; margin-bottom: 4px; }
+    .sym { color: #2f6f8f; font-weight: 700; }
+    .footer-link { font-size: 11px; color: #2f6f8f; padding: 4px 16px; }
+    .wl-head { display: flex; justify-content: space-between; align-items: flex-end; padding: 8px 16px 0; }
+    .updated { font-size: 12px; color: #5a6573; }
+    table { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+    th { text-align: left; font-size: 10px; letter-spacing: 0.12em; color: #5a6573; border-bottom: 1px solid #d8dcde; padding: 6px 8px; }
+    td { padding: 8px; border-bottom: 1px solid #eceeef; }
+    tr.struck td { background: rgba(47,111,143,0.08); box-shadow: inset 3px 0 0 #2f6f8f; }
+    .up { color: #1f6b4a; } .down { color: #9b2c2c; }
+    .ctx { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; padding: 4px 12px; font-size: 11px; }
+    .ctx div { border-top: 1px solid #e2e5e7; padding-top: 6px; }
+    .pkt { font-size: 10px; letter-spacing: 0.12em; color: #7a8086; padding: 10px 16px; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+<main class="comp-frame">
+  <div class="r-header region" style="display:flex;align-items:center;padding:0 24px;border-bottom:1px solid #d8dcde;width:100%;left:0;top:0;height:10%;position:absolute;">
+    <div class="brand"><span class="brand-mark"></span>TradePilot</div>
+    <div class="nav" style="margin-left:120px"><span class="on">Dashboard</span><span>Search</span><span>Watchlist</span></div>
+    <div class="header-right">🔔 <span>Good morning, Alex</span></div>
+  </div>
+  <div class="r-masthead-title region mast">
+    <small>MORNING BRIEFING PACKET</small>
+    <h1>TUESDAY, MAY 13, 2025 • 7:45 AM ET</h1>
+  </div>
+  <div class="r-session-meta region meta">
+    <div><strong>Session:</strong> Pre-Market Check-In</div>
+    <div><strong>Focus:</strong> Risk • Flow • Opportunity</div>
+  </div>
+  <div class="r-attention-heading region attn-h">Needs Attention</div>
+  <div class="r-attention-list region attn-list">
+    <div class="item"><span class="stamp">HIGH PRIORITY</span><div><span class="sym">GOOGL</span> Earnings Pre-Announce Risk</div></div>
+    <div class="item"><span class="stamp">NEWS UPDATE</span><div>Trade Update: EU — US Tariffs</div></div>
+    <div class="item"><span class="stamp">DATA RISK</span><div>CPI Data Tomorrow</div></div>
+    <div class="item"><span class="stamp">GAP UP</span><div><span class="sym">PLTR</span> <span class="up">+6.8%</span></div></div>
+    <div class="item"><span class="stamp">GAP DOWN</span><div><span class="sym">MRNA</span> <span class="down">-5.7%</span></div></div>
+    <div class="item"><span class="stamp">VOLUME SPIKE</span><div><span class="sym">NVDA</span> <span class="up">+3.1%</span></div></div>
+  </div>
+  <div class="r-attention-footer region footer-link">View all alerts & movers →</div>
+  <div class="r-watchlist-heading region">
+    <div class="wl-head" style="padding-left:0"><div class="attn-h" style="padding:0">My Watchlist</div></div>
+  </div>
+  <div class="r-watchlist-updated region updated" style="padding-top:14px;text-align:right;padding-right:16px">Last updated: 7:44 AM ET</div>
+  <div class="r-watchlist-table region" style="padding:0 12px">
+    <table>
+      <thead><tr><th>SYMBOL</th><th>SECURITY</th><th>LAST</th><th>CHG</th><th>CHG%</th><th>VOLUME</th><th>PRE-MKT</th><th>NOTE</th></tr></thead>
+      <tbody>
+        <tr><td>AAPL</td><td>Apple Inc.</td><td>194.62</td><td class="up">+1.23</td><td class="up">+0.64%</td><td>42.1M</td><td>194.90</td><td></td></tr>
+        <tr><td>MSFT</td><td>Microsoft</td><td>430.15</td><td class="down">-0.87</td><td class="down">-0.20%</td><td>18.7M</td><td>429.50</td><td></td></tr>
+        <tr class="struck"><td>NVDA</td><td>NVIDIA</td><td>1,152.74</td><td class="up">+35.21</td><td class="up">+3.15%</td><td>97.3M</td><td>1,188.00</td><td>Earnings Vol.</td></tr>
+        <tr><td>AMZN</td><td>Amazon</td><td>184.57</td><td class="up">+0.68</td><td class="up">+0.37%</td><td>26.8M</td><td>184.90</td><td></td></tr>
+        <tr><td>GOOGL</td><td>Alphabet</td><td>163.28</td><td class="down">-1.12</td><td class="down">-0.68%</td><td>17.2M</td><td>162.10</td><td>Pre-Announce</td></tr>
+        <tr><td>META</td><td>Meta</td><td>498.36</td><td class="up">+2.11</td><td class="up">+0.43%</td><td>14.9M</td><td>499.00</td><td></td></tr>
+        <tr><td>TSLA</td><td>Tesla</td><td>178.64</td><td class="down">-0.56</td><td class="down">-0.31%</td><td>31.6M</td><td>177.80</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="r-context-heading region ctx-h">Market Context</div>
+  <div class="r-context-band region ctx">
+    <div>U.S. FUTURES<br/><strong class="up">+0.29%</strong></div>
+    <div>S&P 500<br/><strong>5,927.50</strong> <span class="down">-0.11%</span></div>
+    <div>DOLLAR INDEX<br/><strong>104.32</strong> <span class="up">+0.18%</span></div>
+    <div>10-YR YIELD<br/><strong>4.31%</strong> <span class="down">-0.03</span></div>
+    <div>OIL (WTI)<br/><strong>78.55</strong> <span class="up">+0.64%</span></div>
+    <div>VIX<br/><strong>13.42</strong> <span class="down">-2.15%</span></div>
+  </div>
+  <div class="r-packet-footer region pkt">Packet ID: MBP-2025-05-13-0745-A · Market monitoring workspace</div>
+</main>
+</body>
+</html>

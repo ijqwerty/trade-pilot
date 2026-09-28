@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Briefing Seal: stamp frame, NE heading chamfer, inner strata — hollow mark, not a filled badge -->
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M4.5 4.5 H20 L27.5 12 V27.5 H4.5 V4.5 ZM8 8 H18.25 L23.75 13.5 V24 H8 V8 Z"
+    fill="#1B2430"
+  />
+  <rect x="10.5" y="15.5" width="10" height="2.25" fill="#2F6F8F"/>
+</svg>

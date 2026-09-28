@@ -1,15 +1,14 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const FooterLink = ({ text, linkText, href }: FooterLinkProps) => {
-    return (
-        <div className="text-center pt-4">
-            <p className="text-sm text-[var(--briefing-slate)]">
-                {text}{` `}
-                <Link href={href} className="footer-link">
-                    {linkText}
-                </Link>
-            </p>
-        </div>
-    )
-}
-export default FooterLink
+  return (
+    <p className="auth-footer">
+      {text}{' '}
+      <Link href={href} className="footer-link">
+        {linkText}
+      </Link>
+    </p>
+  );
+};
+
+export default FooterLink;

@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T14:21:00.000Z",
+  "title": "Design System: TradePilot",
+  "extensions": {
+    "colorMeta": {
+      "cool-paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#EEF2F6",
+        "tonalRamp": ["#1B2430", "#3A4554", "#5A6573", "#8A93A0", "#B8BEC6", "#D5DAE1", "#EEF2F6", "#F7F8F8"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink Charcoal",
+        "canonical": "#1B2430",
+        "tonalRamp": ["#0E131A", "#1B2430", "#2E3A4A", "#455364", "#5A6573", "#8A93A0", "#C5CBD3", "#EEF2F6"]
+      },
+      "thrifty-teal": {
+        "role": "primary",
+        "displayName": "Thrifty Ocean Teal",
+        "canonical": "#2F6F8F",
+        "tonalRamp": ["#163A4C", "#1F4F66", "#275F7A", "#2F6F8F", "#4A8AA8", "#7AADC2", "#B5D2DE", "#E4F0F5"]
+      },
+      "teal-deep": {
+        "role": "primary",
+        "displayName": "Teal Deep",
+        "canonical": "#275F7A",
+        "tonalRamp": ["#122E3C", "#1A4054", "#275F7A", "#2F6F8F", "#4A8AA8", "#7AADC2", "#B5D2DE", "#E4F0F5"]
+      },
+      "clay": {
+        "role": "secondary",
+        "displayName": "Clay Stamp",
+        "canonical": "#C45C26",
+        "tonalRamp": ["#5C2A10", "#7A3A16", "#9B4A1E", "#C45C26", "#D47A4A", "#E4A07A", "#F0CDB8", "#F7F2EE"]
+      },
+      "mute-slate": {
+        "role": "neutral",
+        "displayName": "Mute Slate",
+        "canonical": "#5A6573",
+        "tonalRamp": ["#1B2430", "#2E3A4A", "#455364", "#5A6573", "#7A8491", "#A0A8B2", "#CDD2D8", "#EEF2F6"]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel Mist",
+        "canonical": "#F7F8F8",
+        "tonalRamp": ["#1B2430", "#5A6573", "#8A93A0", "#B8BEC6", "#D5DAE1", "#E8EBEE", "#F0F2F4", "#F7F8F8"]
+      },
+      "stamp-ink": {
+        "role": "neutral",
+        "displayName": "Stamp Ink",
+        "canonical": "#F7F2EE",
+        "tonalRamp": ["#C45C26", "#D47A4A", "#E4A07A", "#EBC4A8", "#F0D5C4", "#F3E4DA", "#F7F2EE", "#FCFAF8"]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": ["#1B2430", "#5A6573", "#8A93A0", "#B8BEC6", "#D5DAE1", "#EEF2F6", "#F7F8F8", "#FFFFFF"]
+      },
+      "delta-up": {
+        "role": "neutral",
+        "displayName": "Delta Up",
+        "canonical": "#1F6B4A",
+        "tonalRamp": ["#0F3A28", "#164F36", "#1F6B4A", "#2A8A5F", "#4AA87A", "#7BC4A0", "#B8E0CC", "#E6F5EE"]
+      },
+      "delta-down": {
+        "role": "neutral",
+        "displayName": "Delta Down",
+        "canonical": "#9B2C2C",
+        "tonalRamp": ["#4A1515", "#6B1E1E", "#9B2C2C", "#B84545", "#D06A6A", "#E49A9A", "#F0C8C8", "#F9EAEA"]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Strata Rule",
+        "canonical": "color-mix(in srgb, #1B2430 14%, transparent)",
+        "tonalRamp": ["#1B2430", "color-mix(in srgb, #1B2430 28%, transparent)", "color-mix(in srgb, #1B2430 18%, transparent)", "color-mix(in srgb, #1B2430 14%, transparent)", "color-mix(in srgb, #1B2430 10%, transparent)", "color-mix(in srgb, #1B2430 6%, transparent)", "#EEF2F6", "#F7F8F8"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Session masthead date line (Castoro Titling, uppercase)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles: Needs Attention, My Watchlist."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Auth titles, empty states, alert names."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "UI copy, nav, forms, table cells, attention detail."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase micro labels: table headers, masthead dt, section labels, stamps."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "row-ease",
+        "value": "180ms ease-out",
+        "purpose": "Watchlist row background and opacity transitions."
+      },
+      {
+        "name": "color-ease",
+        "value": "transition-colors",
+        "purpose": "Nav, links, and primary button color shifts."
+      }
+    ],
+    "breakpoints": [
+      { "name": "nav-sm", "value": "640px" },
+      { "name": "table-defer", "value": "768px" },
+      { "name": "split", "value": "960px" },
+      { "name": "watchlist-widgets", "value": "1100px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Teal fill CTA for search, watchlist add, and auth submit.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Search</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; height: 48px; padding: 12px 16px; background: #2F6F8F; color: #FFFFFF; font-family: \"Source Sans 3\", ui-sans-serif, system-ui, sans-serif; font-size: 1rem; font-weight: 500; border: none; border-radius: 8px; cursor: pointer; transition: background-color 0.2s ease; } .ds-btn-primary:hover { background: #275F7A; } .ds-btn-primary:focus-visible { outline: 2px solid #2F6F8F; outline-offset: 2px; } .ds-btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }"
+    },
+    {
+      "name": "Clay Outline Button",
+      "kind": "button",
+      "refersTo": "button-clay-outline",
+      "description": "Add-alert control — clay type and border, transparent fill.",
+      "html": "<button class=\"ds-btn-clay\" type=\"button\">Add alert</button>",
+      "css": ".ds-btn-clay { display: inline-flex; align-items: center; gap: 0.375rem; padding: 8px 12px; background: transparent; color: #C45C26; font-family: \"Source Sans 3\", ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; border: 1px solid color-mix(in srgb, #C45C26 35%, transparent); border-radius: 8px; cursor: pointer; transition: background-color 0.2s ease; } .ds-btn-clay:hover { background: color-mix(in srgb, #C45C26 8%, transparent); } .ds-btn-clay:focus-visible { outline: 2px solid #2F6F8F; outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Auth and form inputs on white field with teal focus border.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Email</span><input class=\"ds-field-input\" type=\"email\" placeholder=\"you@example.com\" /></label>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 0.35rem; font-family: \"Source Sans 3\", ui-sans-serif, system-ui, sans-serif; } .ds-field-label { font-size: 0.875rem; font-weight: 500; color: #5A6573; } .ds-field-input { height: 48px; padding: 12px; font-size: 1rem; color: #1B2430; background: #FFFFFF; border: 1px solid color-mix(in srgb, #1B2430 18%, transparent); border-radius: 8px; } .ds-field-input::placeholder { color: color-mix(in srgb, #5A6573 70%, transparent); } .ds-field-input:focus { outline: none; border-color: #2F6F8F; } .ds-field-input:focus-visible { outline: 2px solid #2F6F8F; outline-offset: 2px; }"
+    },
+    {
+      "name": "Primary Nav",
+      "kind": "nav",
+      "refersTo": "nav-link-active",
+      "description": "Quiet sticky header links with teal underline on the active route.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a class=\"ds-nav-link ds-nav-link-active\" href=\"#\">Dashboard</a><a class=\"ds-nav-link\" href=\"#\">Search</a><a class=\"ds-nav-link\" href=\"#\">Watchlist</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 2rem; font-family: \"Source Sans 3\", ui-sans-serif, system-ui, sans-serif; font-weight: 500; } .ds-nav-link { color: #5A6573; text-decoration: none; transition: color 0.2s ease; } .ds-nav-link:hover { color: #2F6F8F; } .ds-nav-link:focus-visible { outline: 2px solid #2F6F8F; outline-offset: 2px; } .ds-nav-link-active { color: #1B2430; border-bottom: 2px solid #2F6F8F; padding-bottom: 0.125rem; }"
+    },
+    {
+      "name": "Attention Stamp",
+      "kind": "chip",
+      "refersTo": "attention-stamp",
+      "description": "Clay micro-stamp for UPPER / LOWER / VOLUME / NOTE in the attention rail.",
+      "html": "<span class=\"ds-stamp\">UPPER</span>",
+      "css": ".ds-stamp { display: inline-flex; align-items: center; justify-content: center; min-width: 3.25rem; padding: 0.2rem 0.4rem; background: #C45C26; color: #F7F2EE; font-family: \"Source Sans 3\", ui-sans-serif, system-ui, sans-serif; font-size: 0.625rem; font-weight: 700; letter-spacing: 0.1em; line-height: 1.2; text-transform: uppercase; border-radius: 2px; }"
+    },
+    {
+      "name": "Attention Item",
+      "kind": "custom",
+      "refersTo": "attention-stamp",
+      "description": "Memo-rail alert row: clay stamp, teal symbol, ink name, slate detail.",
+      "html": "<article class=\"ds-attention-item\"><span class=\"ds-stamp\">UPPER</span><div class=\"ds-attention-body\"><a class=\"ds-symbol\" href=\"#\">NVDA</a><p class=\"ds-attention-name\">Price above threshold</p><p class=\"ds-attention-detail\">Price above <span class=\"ds-nums\">$1,100.00</span></p></div></article>",
+      "css": ".ds-attention-item { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.75rem; align-items: start; padding-bottom: 0.85rem; border-bottom: 1px solid color-mix(in srgb, #1B2430 14%, transparent); font-family: \"Source Sans 3\", ui-sans-serif, system-ui, sans-serif; } .ds-stamp { display: inline-flex; align-items: center; justify-content: center; min-width: 3.25rem; padding: 0.2rem 0.4rem; background: #C45C26; color: #F7F2EE; font-size: 0.625rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; } .ds-symbol { color: #2F6F8F; font-weight: 600; text-decoration: none; } .ds-symbol:hover { text-decoration: underline; text-underline-offset: 3px; } .ds-attention-name { margin: 0.15rem 0 0; font-size: 0.9375rem; font-weight: 600; color: #1B2430; } .ds-attention-detail { margin: 0.25rem 0 0; font-size: 0.8125rem; line-height: 1.45; color: #5A6573; } .ds-nums { font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Watchlist Row",
+      "kind": "custom",
+      "refersTo": "panel-surface",
+      "description": "Measurement-grid row with teal hover wash and optional clay struck selection.",
+      "html": "<table class=\"ds-wl\"><thead><tr><th>Symbol</th><th>Price</th><th>Change</th></tr></thead><tbody><tr class=\"is-struck\"><td><a href=\"#\">NVDA</a></td><td class=\"ds-nums\">$128.45</td><td class=\"ds-nums ds-up\">+1.2%</td></tr><tr><td><a href=\"#\">AAPL</a></td><td class=\"ds-nums\">$211.00</td><td class=\"ds-nums ds-down\">−0.4%</td></tr></tbody></table>",
+      "css": ".ds-wl { width: 100%; border-collapse: collapse; font-family: \"Source Sans 3\", ui-sans-serif, system-ui, sans-serif; font-size: 0.875rem; font-variant-numeric: tabular-nums; border-top: 1px solid color-mix(in srgb, #1B2430 14%, transparent); border-bottom: 1px solid color-mix(in srgb, #1B2430 14%, transparent); } .ds-wl th { padding: 0.7rem 0.65rem; text-align: left; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A6573; border-bottom: 1px solid color-mix(in srgb, #1B2430 14%, transparent); } .ds-wl td { padding: 0.7rem 0.65rem; border-bottom: 1px solid color-mix(in srgb, #1B2430 14%, transparent); color: #1B2430; transition: background-color 180ms ease-out; } .ds-wl td a { color: #2F6F8F; font-weight: 600; text-decoration: none; } .ds-wl td a:hover { text-decoration: underline; text-underline-offset: 3px; } .ds-wl tr:hover td, .ds-wl tr:focus-within td { background: color-mix(in srgb, #2F6F8F 6%, transparent); } .ds-wl tr.is-struck td { background: color-mix(in srgb, #C45C26 8%, transparent); text-decoration: line-through; text-decoration-color: color-mix(in srgb, #C45C26 50%, transparent); text-decoration-thickness: 1px; } .ds-wl tr.is-struck td a { text-decoration: none; } .ds-nums { font-variant-numeric: tabular-nums; } .ds-up { color: #1F6B4A; } .ds-down { color: #9B2C2C; }"
+    },
+    {
+      "name": "Session Masthead",
+      "kind": "custom",
+      "refersTo": "panel-surface",
+      "description": "Display date line with Session / Focus meta under a strata rule.",
+      "html": "<header class=\"ds-masthead\"><h1 class=\"ds-masthead-date\">TUESDAY, MAY 13, 2025 • 7:45 AM ET</h1><dl class=\"ds-masthead-meta\"><div><dt>Session</dt><dd>Pre-Market Check-In</dd></div><div><dt>Focus</dt><dd>Your watchlist</dd></div></dl></header>",
+      "css": ".ds-masthead { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1.25rem 2rem; padding-bottom: 1.25rem; border-bottom: 1px solid color-mix(in srgb, #1B2430 14%, transparent); } .ds-masthead-date { margin: 0; font-family: \"Castoro Titling\", ui-serif, Georgia, serif; font-size: clamp(1.35rem, 2.2vw, 1.85rem); font-weight: 400; letter-spacing: 0.04em; line-height: 1.15; color: #1B2430; text-transform: uppercase; font-variant-numeric: tabular-nums; } .ds-masthead-meta { display: flex; flex-wrap: wrap; gap: 1rem 1.75rem; margin: 0; font-family: \"Source Sans 3\", ui-sans-serif, system-ui, sans-serif; } .ds-masthead-meta div { display: grid; gap: 0.15rem; } .ds-masthead-meta dt { font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: #5A6573; } .ds-masthead-meta dd { margin: 0; font-size: 0.9375rem; font-weight: 500; color: #1B2430; }"
+    },
+    {
+      "name": "Packet Panel",
+      "kind": "card",
+      "refersTo": "panel-surface",
+      "description": "Overlay surface for search, menus, and alert dialogs — panel mist, square, ruled.",
+      "html": "<div class=\"ds-panel\" role=\"dialog\" aria-label=\"Search\"><p class=\"ds-panel-title\">Search symbols</p><p class=\"ds-panel-body\">Type a ticker or company name.</p></div>",
+      "css": ".ds-panel { background: #F7F8F8; color: #1B2430; border: 1px solid color-mix(in srgb, #1B2430 14%, transparent); border-radius: 0; padding: 1rem 1.25rem; font-family: \"Source Sans 3\", ui-sans-serif, system-ui, sans-serif; max-width: 22rem; } .ds-panel-title { margin: 0 0 0.35rem; font-size: 1.125rem; font-weight: 600; } .ds-panel-body { margin: 0; font-size: 0.9375rem; color: #5A6573; line-height: 1.45; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Morning Briefing Packet",
+    "overview": "TradePilot reads as a cool morning market memo on continuous paper, not a trading terminal or a grid of interchangeable dashboard cards. The signed-in home splits attention: a left memo rail for alerts and movers, a right measurement column for the personal watchlist, and a quieter full-width market-context band beneath. Identity comes from thrifty accent use, tabular numerals, hairline strata rules, and struck selection — never glass, neon, or yellow-on-charcoal chrome.\n\nDensity is editorial and scannable: uppercase section headings, restrained chrome in mute slate, and clay reserved for attention stamps. Surfaces stay flat; depth is conveyed by rule lines and soft tonal washes (teal hover, clay strike), not drop shadows or frosted panels.",
+    "keyCharacteristics": [
+      "Continuous cool-paper packet (#EEF2F6) with ink charcoal (#1B2430) as the primary voice",
+      "Split attention rail (≈3/7) above a demotable market-context band",
+      "Thrifty ocean teal for actions, links, symbols, and focus; clay only for attention stamps and strike washes",
+      "Castoro Titling for display masthead / wordmark moments; Source Sans 3 for UI and data",
+      "Tabular numerals, hairline rules, struck selection — no glass, neon, or widget-card collage"
+    ],
+    "rules": [
+      {
+        "name": "The Accent Thrift Rule",
+        "body": "Teal is for action and focus; clay is for attention stamps and strike only. Neither paints large surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Continuous Paper Rule",
+        "body": "The shell stays cool paper end-to-end. Do not introduce glass, neon glows, or yellow-on-charcoal terminal chrome.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Numerals Rule",
+        "body": "Prices, changes, caps, P/E, and thresholds use font-variant-numeric: tabular-nums so columns align.",
+        "section": "typography"
+      },
+      {
+        "name": "The Measurement Label Rule",
+        "body": "Section and column labels are small, uppercase, tracked Source Sans — not decorative eyebrows or kickers above the masthead.",
+        "section": "typography"
+      },
+      {
+        "name": "The Split Desk Rule",
+        "body": "Needs Attention stays left; the personal watchlist owns the main column; global market context stays quieter and below. Do not flatten this into an equal widget-card grid.",
+        "section": "layout"
+      },
+      {
+        "name": "The Strata Voids Rule",
+        "body": "Separate zones with ink-mixed hairline rules and spacing voids, not bordered cards or offset shadows.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Packet Rule",
+        "body": "Measurement grids and memo lists stay square-edged; radius is reserved for controls, not content cards.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep teal thrifty and clay stamp-bound; let cool paper and ink carry most of the screen.",
+      "Do use tabular numerals for every price, change, and threshold column.",
+      "Do preserve the split desk: attention rail, watchlist column, quieter market band below.",
+      "Do separate strata with hairline rules and spacing voids.",
+      "Do use Castoro Titling for masthead/display moments and Source Sans 3 for UI and data."
+    ],
+    "donts": [
+      "Don't rebuild the home as a grid of interchangeable elevated cards or terminal chrome.",
+      "Don't reintroduce yellow-on-charcoal, neon gain/loss fills, glassmorphism, or decorative glow.",
+      "Don't spend clay on large fills, marketing badges, or general CTAs — stamps and strike only.",
+      "Don't invent eyebrow/kicker lines above the masthead; the date line is the display voice.",
+      "Don't drop shadows under packet rails, tables, or stamps."
+    ]
+  }
+}
