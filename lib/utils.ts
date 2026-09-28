@@ -104,8 +104,8 @@ export const formatChangePercent = (changePercent?: number) => {
 };
 
 export const getChangeColorClass = (changePercent?: number) => {
-  if (!changePercent) return 'text-gray-400';
-  return changePercent > 0 ? 'text-green-500' : 'text-red-500';
+  if (!changePercent) return 'text-delta-flat';
+  return changePercent > 0 ? 'text-delta-up' : 'text-delta-down';
 };
 
 export const formatPrice = (price: number) => {

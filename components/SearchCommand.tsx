@@ -99,13 +99,19 @@ export default function SearchCommand({ renderAs = 'button', label = 'Add stock'
                         onClick={handleSelectStock}
                         className="search-item-link"
                     >
-                      <TrendingUp className="h-4 w-4 text-gray-500" />
-                      <div  className="flex-1">
+                      <TrendingUp className="h-4 w-4 text-[var(--briefing-slate)]" />
+                      <div className="flex-1">
                         <div className="search-item-name">
-                          {stock.name}
+                          {stock.name || stock.symbol}
                         </div>
-                        <div className="text-sm text-gray-500">
-                          {stock.symbol} | {stock.exchange } | {stock.type}
+                        <div className="text-sm text-[var(--briefing-slate)]">
+                          {[
+                            stock.name ? stock.symbol : null,
+                            stock.exchange,
+                            stock.type,
+                          ]
+                            .filter(Boolean)
+                            .join(' · ')}
                         </div>
                       </div>
                     </Link>

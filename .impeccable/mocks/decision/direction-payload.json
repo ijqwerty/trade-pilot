@@ -1,0 +1,145 @@
+{
+  "title": "Choose TradePilot's visual world",
+  "question": "The roll assigned Morning Briefing Packet. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Morning Briefing Packet",
+      "kicker": "THE ROLL",
+      "lineage": "executive desk briefing memos and priority packets",
+      "thesis": "Your markets arrive as a morning briefing: what needs attention first, then your watchlist, then the wider market.",
+      "palette": ["#EEF2F6", "#1B2430", "#2F6F8F", "#C45C26", "#5A6573"],
+      "materials": ["cool morning paper", "ink charcoal", "priority stamp", "tabbed strata", "tabular numerals"],
+      "viewport": "Desktop home as one vertical briefing: quiet TradePilot chrome, session masthead, Needs attention stratum, struck watchlist quotes as the personal core, quieter global market context below — no interchangeable widget card grid.",
+      "risk": "Can feel corporate-generic if strata become boxed cards instead of a continuous packet.",
+      "raised": [
+        {
+          "from": "challenger-streaming",
+          "raise": "Focus-expansion: the attended symbol or alert gains presence while neighbors quietly recede."
+        },
+        {
+          "from": "challenger-monochrome",
+          "raise": "Accent thrift: one action accent appears sparingly across a viewport, not as scattered decoration."
+        },
+        {
+          "from": "challenger-cloud-quarry",
+          "raise": "Strata voids: deep intentional gaps separate briefing layers instead of equal card gutters."
+        },
+        {
+          "from": "challenger-cathode",
+          "raise": "Struck selection: active rows snap forward without boxing every cell in chrome."
+        },
+        {
+          "from": "challenger-oscilloscope",
+          "raise": "Measurement grid: prices and deltas sit on a shared tabular alignment, not free-floating chips."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "Morning Broadsheet",
+      "kicker": "IMPECCABLE'S PICK",
+      "lineage": "print financial newspaper morning section",
+      "thesis": "TradePilot as your personal markets section: columns of type and numbers you read, not a dashboard you operate.",
+      "palette": ["#F7F4EE", "#12151A", "#1F4B7A", "#8C1D18", "#6B7280"],
+      "materials": ["newsprint hierarchy", "column rules", "masthead type", "ink deltas", "section heads"],
+      "viewport": "Full-width masthead with TradePilot wordmark as section title, then a lead watchlist column beside a quieter market-context column — hierarchy from type weight, not cards.",
+      "risk": "Also the direction most runs in this category land on; can tip into broadsheet costume if hairlines and serifs become the whole idea.",
+      "comp": ".impeccable/mocks/decision/model-pick.webp"
+    },
+    {
+      "id": "challenger-cyclorama",
+      "label": "Session Cyclorama",
+      "verdict": "competitive",
+      "lineage": "theater cyclorama dawn lighting",
+      "thesis": "Market session as atmosphere: the shell's horizon light marks pre-market, open, and close while your watchlist stays the actors on stage.",
+      "palette": ["#0B0E14", "#1E3A5F", "#C47A7A", "#F2F0EA", "#9AA3B2"],
+      "materials": ["depthless cyc ground", "horizon light band", "cue labels", "session phases", "soft day wash"],
+      "viewport": "Dark-to-light horizon band behind a sparse shell; watchlist and alerts hold as horizontal bands stacked from attention to context, with session phase labeled in text.",
+      "case": "Wins morning-ritual identification; loses on product clarity for tables, quotes, and alerts that need a paper-calm reading surface.",
+      "risk": "Atmosphere can overpower scanability if color becomes the only session signal.",
+      "comp": ".impeccable/mocks/decision/challenger-cyclorama.webp",
+      "hero": "https://impeccable.style/worlds/cards/stagecraft-theater-lighting-cyclorama-dawn-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/stagecraft-theater-lighting-cyclorama-dawn.webp"
+    },
+    {
+      "id": "challenger-streaming",
+      "label": "Watchlist Title Wall",
+      "verdict": "declined",
+      "lineage": "streaming catalog poster wall",
+      "palette": ["#121212", "#FFFFFF", "#E50914", "#2A2A2A"],
+      "materials": ["poster tiles", "row rails", "focus expansion", "dimmed neighbors"],
+      "case": "Entertainment browsing grammar fights morning quote scanning and tabular market work.",
+      "kept": "Focus-expansion: one attended item grows while the rest quiet.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-streaming-title-card-wall-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/pop-culture-shelf-streaming-title-card-wall.webp"
+    },
+    {
+      "id": "challenger-monochrome",
+      "label": "Monochrome Proof Desk",
+      "verdict": "declined",
+      "lineage": "monochrome product marketing canon",
+      "palette": ["#FAFAFA", "#111111", "#2563EB", "#E5E5E5"],
+      "materials": ["neutral scale", "hairline ghosts", "sparse accent", "proof frames"],
+      "case": "Claim-and-proof marketing topology is Persuade grammar, not a daily Operate workspace.",
+      "kept": "Accent thrift across the whole shell.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-monochrome-product-marketing-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/digital-design-canon-monochrome-product-marketing.webp"
+    },
+    {
+      "id": "challenger-cloud-quarry",
+      "label": "Cloud Quarry",
+      "verdict": "declined",
+      "lineage": "surreal cloud quarry worlds",
+      "palette": ["#F5F7FA", "#7EB6D9", "#8A93A0", "#C0C8D0"],
+      "materials": ["cumulus blocks", "cut voids", "tally boards"],
+      "case": "Surreal construction may dazzle but fails investor identification and market-task clarity.",
+      "kept": "Strata voids — deep gaps between information layers.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-cloud-quarry-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-cloud-quarry.webp"
+    },
+    {
+      "id": "challenger-cathode",
+      "label": "Struck Cathode Gauze",
+      "verdict": "declined",
+      "lineage": "cathode numeral stack access control",
+      "palette": ["#0A1020", "#FF6A00", "#C4A574", "#E8E4D8"],
+      "materials": ["anode gauze", "ghost numerals", "struck glow"],
+      "case": "Night-instrument neon edges toward terminal intimidation the brief rejects.",
+      "kept": "Struck selection without boxing every value.",
+      "hero": "https://impeccable.style/worlds/cards/operate-b-struck-cathode-gauze-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/operate-b-struck-cathode-gauze.webp"
+    },
+    {
+      "id": "challenger-oscilloscope",
+      "label": "Signal Bench",
+      "verdict": "declined",
+      "lineage": "CRT oscilloscope signal bench",
+      "palette": ["#0A0F0A", "#33FF66", "#4A554A", "#FFB000"],
+      "materials": ["phosphor trace", "etched graticule", "detented knobs"],
+      "case": "Lab-instrument metaphor collapses into trading-terminal and crypto aesthetics.",
+      "kept": "Measurement-grid courage for aligned numerals.",
+      "hero": "https://impeccable.style/worlds/cards/scientific-notation-oscilloscope-signal-bench-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/scientific-notation-oscilloscope-signal-bench.webp"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A polished dark retail-investing dashboard: sticky chrome, interchangeable rounded widget cards, green/red deltas, chart-forward home.",
+    "palette": ["#0B0F14", "#1A2332", "#22C55E", "#EF4444", "#F5C542"],
+    "materials": ["dark panels", "rounded cards", "glow accents", "embedded charts"],
+    "viewport": "Header plus a grid of market overview, heatmap, news, and quotes cards — the incumbent arrangement executed at full craft.",
+    "risk": "Indistinguishable from every other retail finance template by design.",
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

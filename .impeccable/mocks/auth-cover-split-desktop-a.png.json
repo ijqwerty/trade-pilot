@@ -1,0 +1,12 @@
+{
+  "prompt": "UI screenshot mockup: TradePilot /sign-in desktop, 16:9. Morning Briefing Packet Cover Split. NO photographs, NO illustrations, NO charts-as-images, NO hero images, NO gradient artwork, NO decorative background images, NO stock art, NO auth-cover-field. The cover is pure editorial layout built from type, hairline rules, Signal Ticks marks, spacing, and restrained text/data details only.\n\nLAYOUT: Cool paper #EEF2F6 full bleed. LEFT ~40% form rail. RIGHT ~60% editorial cover. Thin vertical hairline between columns. Flat paper — no shadows, glass, cards, or image panels.\n\nLEFT FORM RAIL: Signal Ticks logo (horizontal charcoal rule crossed by four equal-height ticks; outer charcoal #1B2430, inner pair teal #2F6F8F) + TradePilot wordmark. Welcome back. Lede: Sign in to open today's morning briefing and the symbols you follow. EMAIL / PASSWORD white fields, 8px radius. Teal #2F6F8F Sign in button. Create an account link. No date on form rail.\n\nRIGHT COVER (typography-led, substantial, not empty): Top — Signal Ticks mark + Castoro Titling uppercase date SATURDAY, SEPTEMBER 26, 2026 under a hairline strata rule. Large Castoro/ink title YOUR MORNING MARKET BRIEFING. Source Sans mute-slate lede (2 lines). Then a hairline rule. Then a restrained SESSION / FOCUS definition list in micro uppercase slate labels with ink values. Another hairline. Then TOC as three hairline-ruled rows: Watchlist / Alerts / Market context with short mute-slate details. Quiet footer meta in slate. Generous strata voids between bands.\n\nPalette only: #EEF2F6 #1B2430 #2F6F8F #5A6573 #FFFFFF. Designed UI screen.\n\nReferences: Morning Briefing Packet home review (identity only), current /sign-in (form truth). Do not use auth-cover-field.",
+  "createdAt": "2026-09-26T02:05:00.000Z",
+  "tool": "cursor-generate-image",
+  "aspect": "16:9",
+  "viewport": "desktop",
+  "direction": "Packet Cover Split",
+  "seed": "752358fd",
+  "variant": "A-canonical-type-cover",
+  "constraints": ["no-auth-cover-field", "no-hero-image", "type-and-strata-only"],
+  "approved": true
+}

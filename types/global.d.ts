@@ -32,6 +32,8 @@ declare global {
         validation?: RegisterOptions;
         disabled?: boolean;
         value?: string;
+        autoComplete?: string;
+        hint?: string;
     };
 
     type Option = {
@@ -47,6 +49,7 @@ declare global {
         control: Control;
         error?: FieldError;
         required?: boolean;
+        hint?: string;
     };
 
     type FooterLinkProps = {

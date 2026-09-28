@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Strata Bearing: dominant horizontal strata; short datum; shallow bearing + heading stub -->
+  <path d="M2 18 H30" stroke="#1B2430" stroke-width="2.25" stroke-linecap="square"/>
+  <!-- Datum: short reference tick crossing the strata (not a full-height crosshair) -->
+  <path d="M9 12 V24" stroke="#1B2430" stroke-width="1.75" stroke-linecap="square"/>
+  <!-- Bearing stem: shallow climb from the datum -->
+  <path d="M9 18 L23.5 9.5" stroke="#2F6F8F" stroke-width="2.25" stroke-linecap="square"/>
+  <!-- Heading stub at the leading end — navigational cut, not an arrowhead -->
+  <path d="M21.6 7.7 L25.4 11.3" stroke="#2F6F8F" stroke-width="2" stroke-linecap="square"/>
+</svg>

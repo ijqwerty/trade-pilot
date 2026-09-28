@@ -1,0 +1,20 @@
+{
+  "regions": [
+    { "id": "header", "kind": "chrome", "grid": "A0:J0", "note": "sticky header bar on cool paper" },
+    { "id": "logo", "kind": "control", "grid": "A0:B0", "note": "TradePilot wordmark link" },
+    { "id": "nav", "kind": "control", "grid": "C0:E0", "note": "Dashboard Search Watchlist text nav" },
+    { "id": "bell", "kind": "control", "grid": "H0:H0", "note": "notification bell" },
+    { "id": "user-menu", "kind": "control", "grid": "I0:J0", "note": "greeting and user menu" },
+    { "id": "masthead-title", "kind": "text", "grid": "A1:E1", "note": "MORNING BRIEFING PACKET and date line" },
+    { "id": "session-meta", "kind": "text", "grid": "F1:H1", "note": "Session and Focus labels" },
+    { "id": "attention-heading", "kind": "text", "grid": "A2:C2", "note": "NEEDS ATTENTION stratum title" },
+    { "id": "attention-list", "kind": "chrome", "grid": "A3:C8", "note": "alerts and movers memo list with clay stamps", "container": true },
+    { "id": "attention-footer", "kind": "control", "grid": "A9:C9", "note": "View all alerts and movers link" },
+    { "id": "watchlist-heading", "kind": "text", "grid": "D2:G2", "note": "MY WATCHLIST heading" },
+    { "id": "watchlist-updated", "kind": "text", "grid": "H2:J2", "note": "Last updated timestamp" },
+    { "id": "watchlist-table", "kind": "chrome", "grid": "D3:J6", "note": "watchlist measurement grid table with struck row", "container": true },
+    { "id": "context-heading", "kind": "text", "grid": "D7:J7", "note": "MARKET CONTEXT heading" },
+    { "id": "context-band", "kind": "chrome", "grid": "D8:J8", "note": "global market context instruments band", "container": true },
+    { "id": "packet-footer", "kind": "text", "grid": "D9:J9", "note": "quiet packet meta line" }
+  ]
+}

@@ -8,14 +8,13 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import {useRouter} from "next/navigation";
 import {Button} from "@/components/ui/button";
 import {LogOut, Settings} from "lucide-react";
-import NavItems from "@/components/NavItems";
 import {signOut} from "@/lib/actions/auth.actions";
 
-const UserDropdown = ({ user, initialStocks }: {user: User, initialStocks: StockWithWatchlistStatus[]}) => {
+const UserDropdown = ({ user }: {user: User, initialStocks?: StockWithWatchlistStatus[]}) => {
     const router = useRouter();
 
     const handleSignOut = async () => {
@@ -23,56 +22,52 @@ const UserDropdown = ({ user, initialStocks }: {user: User, initialStocks: Stock
         router.push("/sign-in");
     }
 
+    const firstName = user.name?.split(' ')[0] ?? 'there';
+
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="flex items-center gap-3 text-gray-4 hover:text-yellow-500">
-                    <Avatar className="h-8 w-8">
-                        <AvatarImage src="https://avatars.githubusercontent.com/u/153423955?s=280&v=4" />
-                        <AvatarFallback className="bg-yellow-500 text-yellow-900 text-sm font-bold">
-                            {user.name[0]}
-                        </AvatarFallback>
-                    </Avatar>
-                    <div className="hidden md:flex flex-col items-start">
-                        <span className='text-base font-medium text-gray-400'>
-                            {user.name}
+                <Button variant="ghost" className="header-user-trigger">
+                    <div className="hidden md:flex flex-col items-end mr-1">
+                        <span className="text-sm font-medium text-[var(--briefing-ink)]">
+                            Good morning, {firstName}
                         </span>
                     </div>
+                    <Avatar className="h-8 w-8">
+                        <AvatarFallback className="bg-[var(--briefing-teal)] text-white text-sm font-bold">
+                            {user.name?.[0] ?? '?'}
+                        </AvatarFallback>
+                    </Avatar>
                 </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="text-gray-400">
+            <DropdownMenuContent className="packet-menu">
                 <DropdownMenuLabel>
                     <div className="flex relative items-center gap-3 py-2">
                         <Avatar className="h-10 w-10">
-                            <AvatarImage src="https://avatars.githubusercontent.com/u/153423955?s=280&v=4" />
-                            <AvatarFallback className="bg-yellow-500 text-yellow-900 text-sm font-bold">
-                                {user.name[0]}
+                            <AvatarFallback className="bg-[var(--briefing-teal)] text-white text-sm font-bold">
+                                {user.name?.[0] ?? '?'}
                             </AvatarFallback>
                         </Avatar>
                         <div className="flex flex-col">
-                            <span className='text-base font-medium text-gray-400'>
+                            <span className="text-base font-medium text-[var(--briefing-ink)]">
                                 {user.name}
                             </span>
-                            <span className="text-sm text-gray-500">{user.email}</span>
+                            <span className="text-sm text-[var(--briefing-slate)]">{user.email}</span>
                         </div>
                     </div>
                 </DropdownMenuLabel>
-                <DropdownMenuSeparator className="bg-gray-600"/>
+                <DropdownMenuSeparator />
                 <DropdownMenuItem
                     onClick={() => router.push('/settings')}
-                    className="text-gray-100 text-md font-medium focus:bg-transparent focus:text-yellow-500 transition-colors cursor-pointer"
+                    className="packet-menu-item"
                 >
-                    <Settings className="h-4 w-4 mr-2 hidden sm:block" />
+                    <Settings className="h-4 w-4 mr-2" />
                     Settings
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={handleSignOut} className="text-gray-100 text-md font-medium focus:bg-transparent focus:text-yellow-500 transition-colors cursor-pointer">
-                    <LogOut className="h-4 w-4 mr-2 hidden sm:block" />
+                <DropdownMenuItem onClick={handleSignOut} className="packet-menu-item">
+                    <LogOut className="h-4 w-4 mr-2" />
                     Logout
                 </DropdownMenuItem>
-                <DropdownMenuSeparator className="hidden sm:block bg-gray-600"/>
-                <nav className="sm:hidden">
-                    <NavItems initialStocks={initialStocks} />
-                </nav>
             </DropdownMenuContent>
         </DropdownMenu>
     )

@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Castoro_Titling, Source_Sans_3 } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner"
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const castoroTitling = Castoro_Titling({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-display",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sourceSans = Source_Sans_3({
   subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -24,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${castoroTitling.variable} ${sourceSans.variable} font-sans antialiased`}
       >
         {children}
         <Toaster />

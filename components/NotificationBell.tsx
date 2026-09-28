@@ -103,7 +103,7 @@ const NotificationBell = ({ initialUnreadCount }: NotificationBellProps) => {
         <Button
           variant="ghost"
           size="icon"
-          className="relative h-9 w-9 text-gray-400 hover:text-yellow-500"
+          className="relative h-9 w-9 text-[var(--briefing-slate)] hover:text-[var(--briefing-teal)]"
           aria-label={
             unreadCount > 0
               ? `Notifications, ${unreadCount} unread`
@@ -112,7 +112,7 @@ const NotificationBell = ({ initialUnreadCount }: NotificationBellProps) => {
         >
           <Bell className="h-5 w-5" />
           {unreadCount > 0 ? (
-            <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-yellow-500 px-1 text-[10px] font-bold leading-none text-yellow-950">
+            <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-[var(--briefing-clay)] px-1 text-[0.625rem] font-bold leading-none tracking-[0.06em] text-[#f7f2ee]">
               {badgeLabel}
             </span>
           ) : null}
@@ -120,17 +120,17 @@ const NotificationBell = ({ initialUnreadCount }: NotificationBellProps) => {
       </PopoverTrigger>
       <PopoverContent
         align="end"
-        className="w-[min(100vw-2rem,22rem)] border-gray-600 bg-gray-800 p-0 text-gray-400"
+        className="w-[min(100vw-2rem,22rem)] border-[color-mix(in_srgb,var(--briefing-ink)_14%,transparent)] bg-[#f7f8f8] p-0 text-[var(--briefing-slate)]"
       >
-        <div className="flex items-center justify-between gap-3 border-b border-gray-600 px-4 py-3">
-          <h2 className="text-sm font-medium text-gray-100">Notifications</h2>
+        <div className="flex items-center justify-between gap-3 border-b border-[color-mix(in_srgb,var(--briefing-ink)_14%,transparent)] px-4 py-3">
+          <h2 className="text-sm font-medium text-[var(--briefing-ink)]">Notifications</h2>
           <Button
             type="button"
             variant="ghost"
             size="sm"
             disabled={unreadCount <= 0 || markingAll}
             onClick={handleMarkAll}
-            className="h-auto px-2 py-1 text-xs text-gray-400 hover:text-yellow-500 disabled:opacity-40"
+            className="h-auto px-2 py-1 text-xs text-[var(--briefing-slate)] hover:text-[var(--briefing-teal)] disabled:opacity-40"
           >
             Mark all as read
           </Button>
@@ -139,27 +139,27 @@ const NotificationBell = ({ initialUnreadCount }: NotificationBellProps) => {
         <div className="max-h-80 overflow-y-auto">
           {listState.status === 'loading' || listState.status === 'idle' ? (
             <div className="flex items-center justify-center py-10">
-              <Loader2 className="h-5 w-5 animate-spin text-gray-500" />
+              <Loader2 className="h-5 w-5 animate-spin text-[var(--briefing-slate)]" />
             </div>
           ) : null}
 
           {listState.status === 'error' ? (
-            <p className="px-4 py-8 text-center text-sm text-gray-500">
+            <p className="px-4 py-8 text-center text-sm text-[var(--briefing-slate)]">
               {"Couldn't load notifications"}
             </p>
           ) : null}
 
           {listState.status === 'ready' && listState.items.length === 0 ? (
             <div className="px-4 py-8 text-center">
-              <p className="text-sm font-medium text-gray-100">No notifications yet</p>
-              <p className="mt-1 text-xs text-gray-500">
+              <p className="text-sm font-medium text-[var(--briefing-ink)]">No notifications yet</p>
+              <p className="mt-1 text-xs text-[var(--briefing-slate)]">
                 Price and volume alerts will show up here.
               </p>
             </div>
           ) : null}
 
           {listState.status === 'ready' && listState.items.length > 0 ? (
-            <ul className="divide-y divide-gray-700">
+            <ul className="divide-y divide-[color-mix(in_srgb,var(--briefing-ink)_12%,transparent)]">
               {listState.items.map((item) => {
                 const unread = !item.readAt;
                 return (
@@ -167,12 +167,12 @@ const NotificationBell = ({ initialUnreadCount }: NotificationBellProps) => {
                     <button
                       type="button"
                       onClick={() => handleItemClick(item)}
-                      className="flex w-full flex-col gap-0.5 px-4 py-3 text-left transition-colors hover:bg-gray-700/60"
+                      className="flex w-full flex-col gap-0.5 px-4 py-3 text-left transition-colors hover:bg-[color-mix(in_srgb,var(--briefing-teal)_8%,transparent)]"
                     >
                       <div className="flex items-start justify-between gap-2">
                         <span
                           className={`text-sm font-medium ${
-                            unread ? 'text-gray-100' : 'text-gray-500'
+                            unread ? 'text-[var(--briefing-ink)]' : 'text-[var(--briefing-slate)]'
                           }`}
                         >
                           {item.title}
@@ -180,7 +180,7 @@ const NotificationBell = ({ initialUnreadCount }: NotificationBellProps) => {
                         {item.symbol ? (
                           <span
                             className={`shrink-0 text-xs ${
-                              unread ? 'text-yellow-500' : 'text-gray-500'
+                              unread ? 'text-[var(--briefing-clay)]' : 'text-[var(--briefing-slate)]'
                             }`}
                           >
                             {item.symbol}
@@ -189,7 +189,7 @@ const NotificationBell = ({ initialUnreadCount }: NotificationBellProps) => {
                       </div>
                       <p
                         className={`line-clamp-2 text-xs ${
-                          unread ? 'text-gray-400' : 'text-gray-500'
+                          unread ? 'text-[var(--briefing-slate)]' : 'text-[var(--briefing-slate)]'
                         }`}
                       >
                         {item.body}

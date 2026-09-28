@@ -20,6 +20,16 @@ function withDisplayPrices(alerts: Alert[], watchlist: StockWithData[]): Alert[]
   }));
 }
 
+function formatQuotesUpdatedLabel(asOf: Date): string {
+  const time = new Intl.DateTimeFormat("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+    timeZone: "America/New_York",
+  }).format(asOf);
+  return `Last updated · ${time} ET`;
+}
+
 export default async function WatchlistPage() {
   const [watchlistResult, alertsResult] = await Promise.all([
     getCurrentUserWatchlist(),
@@ -32,12 +42,21 @@ export default async function WatchlistPage() {
   if (watchlist.length === 0) {
     const initialStocks = await searchStocks();
     return (
-      <div className="watchlist-container">
-        <section className="watchlist space-y-6">
-          <h1 className="watchlist-title">Watchlist</h1>
-          <WatchlistEmpty initialStocks={initialStocks} />
-        </section>
-        <AlertsList alertData={alerts} />
+      <div className="packet-page">
+        <header className="packet-page-header">
+          <div>
+            <h1 className="packet-page-title">Watchlist</h1>
+            <p className="packet-page-lede">
+              Track the symbols you care about and manage alerts beside them.
+            </p>
+          </div>
+        </header>
+        <div className="watchlist-container">
+          <section className="watchlist space-y-6">
+            <WatchlistEmpty initialStocks={initialStocks} />
+          </section>
+          <AlertsList alertData={alerts} />
+        </div>
       </div>
     );
   }
@@ -57,16 +76,27 @@ export default async function WatchlistPage() {
     })(),
   ]);
 
+  const quotesAsOf = new Date();
   const alertsWithPrices = withDisplayPrices(alerts, enrichedWatchlist);
 
   return (
-    <div className="watchlist-container">
-      <section className="watchlist space-y-6">
-        <h1 className="watchlist-title">Watchlist</h1>
-        <WatchlistTable watchlist={enrichedWatchlist} alertCount={alerts.length} />
-        <WatchlistNews news={newsState.news} unavailable={newsState.unavailable} />
-      </section>
-      <AlertsList alertData={alertsWithPrices} />
+    <div className="packet-page">
+      <header className="packet-page-header">
+        <div>
+          <h1 className="packet-page-title">Watchlist</h1>
+          <p className="packet-page-lede">
+            Your personal list with quotes, alerts, and related news.
+          </p>
+        </div>
+        <p className="watchlist-panel-updated">{formatQuotesUpdatedLabel(quotesAsOf)}</p>
+      </header>
+      <div className="watchlist-container">
+        <section className="watchlist space-y-6">
+          <WatchlistTable watchlist={enrichedWatchlist} alertCount={alerts.length} />
+          <WatchlistNews news={newsState.news} unavailable={newsState.unavailable} />
+        </section>
+        <AlertsList alertData={alertsWithPrices} />
+      </div>
     </div>
   );
 }

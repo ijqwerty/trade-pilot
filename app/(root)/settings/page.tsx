@@ -10,13 +10,15 @@ export default async function SettingsPage() {
   }
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-semibold text-gray-100">Settings</h1>
-        <p className="text-gray-500 mt-2">
-          Update your personalization and choose how TradePilot notifies you.
-        </p>
-      </div>
+    <div className="packet-page packet-page--narrow">
+      <header className="packet-page-header">
+        <div>
+          <h1 className="packet-page-title">Settings</h1>
+          <p className="packet-page-lede">
+            Update your personalization and choose how TradePilot notifies you.
+          </p>
+        </div>
+      </header>
       <SettingsForm initialProfile={result.data} />
     </div>
   );

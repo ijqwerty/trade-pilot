@@ -1,0 +1,12 @@
+{
+  "prompt": "UI screenshot mockup: TradePilot sign-in MOBILE portrait 9:16. Morning Briefing Packet. Locked mobile: compact masthead then form. NO images, NO illustrations, NO plates, NO decorative backgrounds, NO auth-cover-field, NO stacked desktop cover.\n\nTOP: Cool paper #EEF2F6. Castoro Titling uppercase SATURDAY, SEPTEMBER 26, 2026. Small Signal Ticks mark. Hairline rule. Your morning market briefing. Stop — no TOC, no plate.\n\nTHEN form: Signal Ticks + TradePilot logo. Welcome back. Sign-in lede. EMAIL and PASSWORD. Full-width teal #2F6F8F Sign in. Create an account link.\n\nFlat paper UI only.",
+  "createdAt": "2026-09-26T02:05:00.000Z",
+  "tool": "cursor-generate-image",
+  "aspect": "9:16",
+  "viewport": "mobile",
+  "direction": "Packet Cover Split",
+  "seed": "752358fd",
+  "variant": "mobile-compact-masthead",
+  "constraints": ["no-auth-cover-field", "no-hero-image", "type-and-strata-only"],
+  "approved": false
+}

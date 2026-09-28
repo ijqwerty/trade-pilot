@@ -52,9 +52,9 @@ const SettingsForm = ({ initialProfile }: { initialProfile: UserProfileData }) =
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-8 max-w-xl">
-      <section className="space-y-5 rounded-lg border border-gray-600 bg-gray-800/40 p-6">
-        <h2 className="text-lg font-semibold text-gray-100">Personalization</h2>
+    <form onSubmit={handleSubmit(onSubmit)} className="settings-form space-y-8">
+      <section className="packet-section">
+        <h2 className="packet-section-title">Personalization</h2>
 
         <CountrySelectField
           name="country"
@@ -95,15 +95,15 @@ const SettingsForm = ({ initialProfile }: { initialProfile: UserProfileData }) =
         />
       </section>
 
-      <section className="space-y-5 rounded-lg border border-gray-600 bg-gray-800/40 p-6">
-        <h2 className="text-lg font-semibold text-gray-100">Notifications</h2>
+      <section className="packet-section">
+        <h2 className="packet-section-title">Notifications</h2>
 
         <div className="flex items-center justify-between gap-4">
           <div>
-            <Label htmlFor="dailyNewsEmail" className="text-gray-200">
+            <Label htmlFor="dailyNewsEmail" className="form-label">
               Daily market news email
             </Label>
-            <p className="text-sm text-gray-500 mt-1">
+            <p className="text-sm text-[var(--briefing-slate)] mt-1">
               Receive the daily digest at noon UTC with watchlist-aware headlines.
             </p>
           </div>
@@ -123,10 +123,10 @@ const SettingsForm = ({ initialProfile }: { initialProfile: UserProfileData }) =
 
         <div className="flex items-center justify-between gap-4">
           <div>
-            <Label htmlFor="alertEmail" className="text-gray-200">
+            <Label htmlFor="alertEmail" className="form-label">
               Price alert emails
             </Label>
-            <p className="text-sm text-gray-500 mt-1">
+            <p className="text-sm text-[var(--briefing-slate)] mt-1">
               Email when your price alerts trigger (when alerts are enabled).
             </p>
           </div>
@@ -146,10 +146,10 @@ const SettingsForm = ({ initialProfile }: { initialProfile: UserProfileData }) =
 
         <div className="flex items-center justify-between gap-4">
           <div>
-            <Label htmlFor="alertInApp" className="text-gray-200">
+            <Label htmlFor="alertInApp" className="form-label">
               In-app alerts
             </Label>
-            <p className="text-sm text-gray-500 mt-1">
+            <p className="text-sm text-[var(--briefing-slate)] mt-1">
               Show alert events in the notification bell.
             </p>
           </div>

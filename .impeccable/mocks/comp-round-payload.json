@@ -1,0 +1,43 @@
+{
+  "title": "Approve TradePilot dashboard composition",
+  "question": "Three compositional comps of the Morning Briefing Packet dashboard. Pick one to build against.",
+  "options": [
+    {
+      "id": "comp-1",
+      "label": "Vertical briefing strata",
+      "kicker": "FROM THE ROLL",
+      "thesis": "Attention, then watchlist core, then quieter market context in one vertical packet.",
+      "palette": ["#EEF2F6", "#1B2430", "#2F6F8F", "#C45C26", "#5A6573"],
+      "materials": ["cool morning paper", "strata voids", "tabular numerals", "priority stamps"],
+      "viewport": "Desktop home stacked as masthead, Needs attention, deep void, watchlist quotes, void, global context.",
+      "risk": "Tall Attention block can push the personal watchlist below the fold on shorter screens.",
+      "comp": ".impeccable/mocks/comp-1-briefing-strata.webp"
+    },
+    {
+      "id": "comp-2",
+      "label": "Split attention rail",
+      "thesis": "Needs attention stays visible in a left memo rail while the watchlist owns the main column.",
+      "palette": ["#EEF2F6", "#1B2430", "#2F6F8F", "#C45C26", "#5A6573"],
+      "materials": ["cool morning paper", "split packet", "measurement grid", "priority stamps"],
+      "viewport": "Left attention column, right struck watchlist table, thin full-width context band beneath.",
+      "risk": "Split layout can feel like a denser tool if the rail gets too heavy.",
+      "comp": ".impeccable/mocks/comp-2-split-attention.webp"
+    },
+    {
+      "id": "comp-3",
+      "label": "Watchlist-hero density",
+      "thesis": "The personal list is the first-viewport hero; attention is a compact strip; context waits below.",
+      "palette": ["#EEF2F6", "#1B2430", "#2F6F8F", "#C45C26", "#5A6573"],
+      "materials": ["cool morning paper", "dense table", "compact stamps", "strata voids"],
+      "viewport": "Masthead, horizontal attention strip, large watchlist measurement grid, context barely at bottom edge.",
+      "risk": "Quiet Attention strip may under-signal alerts for users who need the briefing cue.",
+      "comp": ".impeccable/mocks/comp-3-watchlist-hero.webp"
+    }
+  ],
+  "buildPath": {
+    "value": "comp",
+    "toggle": false
+  },
+  "canon": false,
+  "steer": true
+}

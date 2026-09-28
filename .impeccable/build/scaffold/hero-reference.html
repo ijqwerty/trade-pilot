@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scaffold reference: comp-2-split-attention.webp</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Castoro+Titling:wght@400&display=swap">
+  <link rel="stylesheet" href="layout.css">
+  <style>html,body{margin:0}body{background:#f7f8f8}.region{box-sizing:border-box}.region.text p{white-space:pre-wrap}</style>
+</head>
+<body>
+<!-- Reference only. Every region sits at its measured box inside a comp-aspect frame. Take the boxes (layout.css), keep your own semantic structure. -->
+<main class="comp-frame" style="max-width:1280px">
+  <div class="r-header region chrome" data-region="header"><!-- sticky header bar on cool paper --></div>
+  <div class="r-logo region control" data-region="logo"><!-- TradePilot wordmark link: rebuild the control's chrome from the crop (comp-spec.mjs --crop logo); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-nav region control" data-region="nav"><!-- Dashboard Search Watchlist text nav: rebuild the control's chrome from the crop (comp-spec.mjs --crop nav); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-bell region control" data-region="bell"><!-- notification bell: rebuild the control's chrome from the crop (comp-spec.mjs --crop bell); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-user-menu region control" data-region="user-menu"><!-- greeting and user menu: rebuild the control's chrome from the crop (comp-spec.mjs --crop user-menu); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-masthead-title region text" data-region="masthead-title"><!-- MORNING BRIEFING PACKET and date line --><p style="font-size:var(--r-masthead-title-font);font-family:var(--r-masthead-title-family),sans-serif;font-weight:var(--r-masthead-title-weight);line-height:1.05;margin:0">masthead-title</p></div>
+  <div class="r-session-meta region text" data-region="session-meta"><!-- Session and Focus labels --><p style="font-size:var(--r-session-meta-font);line-height:1.05;margin:0">session-meta</p></div>
+  <div class="r-attention-heading region text" data-region="attention-heading"><!-- NEEDS ATTENTION stratum title --><p style="font-size:var(--r-attention-heading-font);line-height:1.05;margin:0">attention-heading</p></div>
+  <div class="r-attention-list region chrome" data-region="attention-list"><!-- alerts and movers memo list with clay stamps --></div>
+  <div class="r-attention-footer region control" data-region="attention-footer"><!-- View all alerts and movers link: rebuild the control's chrome from the crop (comp-spec.mjs --crop attention-footer); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-watchlist-heading region text" data-region="watchlist-heading"><!-- MY WATCHLIST heading --><p style="font-size:var(--r-watchlist-heading-font);line-height:1.05;margin:0">watchlist-heading</p></div>
+  <div class="r-watchlist-updated region text" data-region="watchlist-updated"><!-- Last updated timestamp --><p style="font-size:var(--r-watchlist-updated-font);line-height:1.05;margin:0">watchlist-updated</p></div>
+  <div class="r-watchlist-table region chrome" data-region="watchlist-table"><!-- watchlist measurement grid table with struck row --></div>
+  <div class="r-context-heading region text" data-region="context-heading"><!-- MARKET CONTEXT heading --><p style="font-size:var(--r-context-heading-font);line-height:1.05;margin:0">context-heading</p></div>
+  <div class="r-context-band region chrome" data-region="context-band"><!-- global market context instruments band --></div>
+  <div class="r-packet-footer region text" data-region="packet-footer"><!-- quiet packet meta line --><p style="font-size:var(--r-packet-footer-font);line-height:1.05;margin:0">packet-footer</p></div>
+</main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "prompt": "UI screenshot mockup: TradePilot /sign-in desktop Cover Split VARIANT B — TOC-and-strata-forward composition. 16:9. NO images, NO illustrations, NO chart plates, NO photos, NO gradients, NO decorative backgrounds, NO auth-cover-field. Cover is type + rules + Signal Ticks + spacing only.\n\nSame locked topology: LEFT ~40% form rail, RIGHT ~60% cover, cool paper #EEF2F6, hairline vertical split.\n\nLEFT form: Exact Signal Ticks + TradePilot logo, Welcome back, sign-in lede, EMAIL/PASSWORD, teal #2F6F8F Sign in, create-account link.\n\nRIGHT cover MEANINGFUL DIFFERENCE from A: Quieter masthead (Signal Ticks + Castoro date). Smaller title. Dominant deep TOC block — three large hairline strata entries (Watchlist, Alerts, Market context) with fuller detail lines. Compact editorial register strip of tabular text only at bottom. Substantial through TOC scale and strata voids, never imagery.\n\nPalette #EEF2F6 #1B2430 #2F6F8F #5A6573 #FFFFFF.",
+  "createdAt": "2026-09-26T02:05:00.000Z",
+  "tool": "cursor-generate-image",
+  "aspect": "16:9",
+  "viewport": "desktop",
+  "direction": "Packet Cover Split",
+  "seed": "752358fd",
+  "variant": "B-toc-strata-forward",
+  "constraints": ["no-auth-cover-field", "no-hero-image", "type-and-strata-only"],
+  "approved": false
+}

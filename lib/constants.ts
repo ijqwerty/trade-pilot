@@ -38,21 +38,21 @@ export const CONDITION_OPTIONS = [
 
 // TradingView Charts
 export const MARKET_OVERVIEW_WIDGET_CONFIG = {
-    colorTheme: 'dark', // dark mode
+    colorTheme: 'light',
     dateRange: '12M', // last 12 months
     locale: 'en', // language
     largeChartUrl: '', // link to a large chart if needed
     isTransparent: true, // makes background transparent
     showFloatingTooltip: true, // show tooltip on hover
-    plotLineColorGrowing: '#0FEDBE', // line color when price goes up
-    plotLineColorFalling: '#0FEDBE', // line color when price falls
-    gridLineColor: 'rgba(240, 243, 250, 0)', // grid line color
-    scaleFontColor: '#DBDBDB', // font color for scale
-    belowLineFillColorGrowing: 'rgba(41, 98, 255, 0.12)', // fill under line when growing
-    belowLineFillColorFalling: 'rgba(41, 98, 255, 0.12)', // fill under line when falling
-    belowLineFillColorGrowingBottom: 'rgba(41, 98, 255, 0)',
-    belowLineFillColorFallingBottom: 'rgba(41, 98, 255, 0)',
-    symbolActiveColor: 'rgba(15, 237, 190, 0.05)', // highlight color for active symbol
+    plotLineColorGrowing: '#2F6F8F', // line color when price goes up
+    plotLineColorFalling: '#2F6F8F', // line color when price falls
+    gridLineColor: 'rgba(27, 36, 48, 0.08)', // grid line color
+    scaleFontColor: '#1B2430', // font color for scale
+    belowLineFillColorGrowing: 'rgba(47, 111, 143, 0.12)', // fill under line when growing
+    belowLineFillColorFalling: 'rgba(47, 111, 143, 0.12)', // fill under line when falling
+    belowLineFillColorGrowingBottom: 'rgba(47, 111, 143, 0)',
+    belowLineFillColorFallingBottom: 'rgba(47, 111, 143, 0)',
+    symbolActiveColor: 'rgba(47, 111, 143, 0.08)', // highlight color for active symbol
     tabs: [
         {
             title: 'Financial',
@@ -88,9 +88,9 @@ export const MARKET_OVERVIEW_WIDGET_CONFIG = {
         },
     ],
     support_host: 'https://www.tradingview.com', // TradingView host
-    backgroundColor: '#141414', // background color
+    backgroundColor: '#EEF2F6', // cool-paper packet surface
     width: '100%', // full width
-    height: 600, // height in px
+    height: 300, // height in px
     showSymbolLogo: true, // show logo next to symbols
     showChart: true, // display mini chart
 };
@@ -103,7 +103,7 @@ export const HEATMAP_WIDGET_CONFIG = {
     isTransparent: true,
     locale: 'en',
     symbolUrl: '',
-    colorTheme: 'dark',
+    colorTheme: 'light',
     exchanges: [],
     hasTopBar: false,
     isDataSetEnabled: false,
@@ -111,29 +111,29 @@ export const HEATMAP_WIDGET_CONFIG = {
     hasSymbolTooltip: true,
     isMonoSize: false,
     width: '100%',
-    height: '600',
+    height: '360',
 };
 
 export const TOP_STORIES_WIDGET_CONFIG = {
     displayMode: 'regular',
     feedMode: 'market',
-    colorTheme: 'dark',
+    colorTheme: 'light',
     isTransparent: true,
     locale: 'en',
     market: 'stock',
     width: '100%',
-    height: '600',
+    height: '360',
 };
 
 export const MARKET_DATA_WIDGET_CONFIG = {
     title: 'Stocks',
     width: '100%',
-    height: 600,
+    height: 300,
     locale: 'en',
     showSymbolLogo: true,
-    colorTheme: 'dark',
-    isTransparent: false,
-    backgroundColor: '#0F0F0F',
+    colorTheme: 'light',
+    isTransparent: true,
+    backgroundColor: '#EEF2F6',
     symbolsGroups: [
         {
             name: 'Financial',
@@ -220,7 +220,7 @@ export function getMarketDataWidgetConfig(symbols?: DashboardWidgetSymbol[]) {
 
 export const SYMBOL_INFO_WIDGET_CONFIG = (symbol: string) => ({
     symbol: symbol.toUpperCase(),
-    colorTheme: 'dark',
+    colorTheme: 'light',
     isTransparent: true,
     locale: 'en',
     width: '100%',
@@ -241,16 +241,16 @@ export const CANDLE_CHART_WIDGET_CONFIG = (symbol: string) => ({
     save_image: false,
     style: 1,
     symbol: symbol.toUpperCase(),
-    theme: 'dark',
+    theme: 'light',
     timezone: 'Etc/UTC',
-    backgroundColor: '#141414',
-    gridColor: '#141414',
+    backgroundColor: '#EEF2F6',
+    gridColor: 'rgba(27, 36, 48, 0.08)',
     watchlist: [],
     withdateranges: false,
     compareSymbols: [],
     studies: [],
     width: '100%',
-    height: 600,
+    height: 480,
 });
 
 export const BASELINE_WIDGET_CONFIG = (symbol: string) => ({
@@ -267,21 +267,21 @@ export const BASELINE_WIDGET_CONFIG = (symbol: string) => ({
     save_image: false,
     style: 10,
     symbol: symbol.toUpperCase(),
-    theme: 'dark',
+    theme: 'light',
     timezone: 'Etc/UTC',
-    backgroundColor: '#141414',
-    gridColor: '#141414',
+    backgroundColor: '#EEF2F6',
+    gridColor: 'rgba(27, 36, 48, 0.08)',
     watchlist: [],
     withdateranges: false,
     compareSymbols: [],
     studies: [],
     width: '100%',
-    height: 600,
+    height: 400,
 });
 
 export const TECHNICAL_ANALYSIS_WIDGET_CONFIG = (symbol: string) => ({
     symbol: symbol.toUpperCase(),
-    colorTheme: 'dark',
+    colorTheme: 'light',
     isTransparent: 'true',
     locale: 'en',
     width: '100%',
@@ -292,7 +292,7 @@ export const TECHNICAL_ANALYSIS_WIDGET_CONFIG = (symbol: string) => ({
 
 export const COMPANY_PROFILE_WIDGET_CONFIG = (symbol: string) => ({
     symbol: symbol.toUpperCase(),
-    colorTheme: 'dark',
+    colorTheme: 'light',
     isTransparent: 'true',
     locale: 'en',
     width: '100%',
@@ -301,7 +301,7 @@ export const COMPANY_PROFILE_WIDGET_CONFIG = (symbol: string) => ({
 
 export const COMPANY_FINANCIALS_WIDGET_CONFIG = (symbol: string) => ({
     symbol: symbol.toUpperCase(),
-    colorTheme: 'dark',
+    colorTheme: 'light',
     isTransparent: 'true',
     locale: 'en',
     width: '100%',
